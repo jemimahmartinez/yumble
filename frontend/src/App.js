@@ -1,5 +1,5 @@
 import './App.css';
-import StartPage from './components/1.Landing/StartPage';
+// import StartPage from './components/1.Landing/StartPage';
 import CreateGroup from './components/3.CreateGroup/CreateGroup';
 import JoinGroup from './components/2.Join/JoinGroup';
 import Preferences from './components/4.Preferences/Preferences';
@@ -23,7 +23,7 @@ function App() {
     <MemoryRouter>
       <div className='BackGroundImage'>
         <Switch>
-          <Route path='/' exact component={StartPage} />
+          <Route path='/' exact component={Result} /> {/* StartPage */}
 
           {/* createGroup should be removed */}
           <Route path='/CreateGroup' component={CreateGroup} />
